@@ -80,7 +80,7 @@ const mainCamera = new THREE.PerspectiveCamera(46, 1, 0.1, 200);
 scene.add(new THREE.HemisphereLight(0x8fd8ff, 0x0a2a24, 0.6));
 const sun = new THREE.DirectionalLight(0xfff2d0, 1.1);
 sun.position.set(10, 18, 9);
-scene.add(해);
+scene.add(sun);
 const fill = new THREE.DirectionalLight(0x4fd1c5, 0.3);
 fill.position.set(-8, 5, -9);
 scene.add(fill);
@@ -441,7 +441,7 @@ function findNearestIdleAlgae(){
 
 let pathT = 0;
 let speedMul = 1.0;
-const BASE_SPEED = 2.0;
+const BASE_SPEED = 1.1;
 let simTime = 0;
 const clock = new THREE.Clock();
 
